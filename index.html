@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CALCULADORA | edison</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,400&display=swap" rel="stylesheet"> -->
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/darkmode.css">
+    <script src="js/main.js" defer></script>
+    <script src="js/darkmode.js" defer></script>
+    <meta name="description" content="Edi_ calc is calculator app project">
+</head>
+
+<body>
+    <main class="calculadora__container">
+        <h2 class="calc__title">EDI_ CALC</h2>
+        <form class="calc" name="calc">
+            <input class="calc__txt" type="text" name="txt" value="" readonly>
+            <section class="calc__txt__prev"></section>
+            <input class="calc__key key__C" type="reset" value="C" data-key="Escape">
+            <span class="key__parentesis">
+                <span class="calc__key key__parentesisL" data-key="(" data-text="(">(</span>
+                <span class="calc__key key__parentesisR" data-key=")" data-text=")">)</span>
+            </span>
+            <!-- <span class="key__extra">
+                <span class="calc__key key__potencia" data-text="^">^</span> -->
+                <span class="calc__key key__percent" data-key="%" data-text="%">%</span>
+            <!-- </span> -->
+            <span class="calc__key key__del" data-key="Backspace">DEL</span>
+            <span class="calc__key key__number" data-key="7">7</span>
+            <span class="calc__key key__number" data-key="8">8</span>
+            <span class="calc__key key__number" data-key="9">9</span>
+            <span class="key__operators">
+                <span class="calc__key key__operator key__divide" data-key="/">&divide</span>
+                <span class="calc__key key__operator key__multiplication" data-key="*">&times</span>
+                <span class="calc__key key__operator key__minus" data-key="-">-</span>
+                <span class="calc__key key__operator key__plus" data-key="+">+</span>
+            </span>
+            <span class="calc__key key__number" data-key="4">4</span>
+            <span class="calc__key key__number" data-key="5">5</span>
+            <span class="calc__key key__number" data-key="6">6</span>
+            <span class="calc__key key__number" data-key="1">1</span>
+            <span class="calc__key key__number" data-key="2">2</span>
+            <span class="calc__key key__number" data-key="3">3</span>
+            <span class="calc__key key__number key__zero" data-key="0">0</span>
+            <span class="calc__key key__dot" data-key=".">.</span>
+            <span class="calc__key key__equal" data-key="Enter">=</span>
+        </form>
+        <section class="darkmodeBtn">
+            <article class="darkmodeBtn__dark" data-setmode="ligth">🌙</article>
+            <article class="darkmodeBtn__ligth" data-setmode="dark">☀</article>
+        </section>
+
+    </main>
+</body>
+
+</html>
